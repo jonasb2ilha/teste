@@ -33,9 +33,13 @@ class Login extends CI_Controller {
             $username = $this->input->post('username');
             $password = $this->input->post('password');
 
+            //verifica userID
             $userId = $this->login->returnId($username);
+            //retorna status user
             $status = $this->login->returnStatus($username);
+            //retorna se password true or false
             $pass = $this->login->returnPassword($username, $password);
+            //retorn dados do user
             $user = $this->login->returnUsuario($username);
             //verifica se o usuário existe
             if (!is_null($userId)) :
