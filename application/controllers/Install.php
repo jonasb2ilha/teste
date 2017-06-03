@@ -55,7 +55,7 @@ class Install extends CI_Controller {
                 set_msg('msgok', 'Parabéns', 'Sistema instalado com sucesso!', 'sucesso');
                 redirect('login');
             } else {
-                set_msg('msgok', 'Ops!', 'Houve um erro ao instalar o sistema! contate o desenvolvedor.', 'erro');
+                set_msg('msgok', 'Ops!', 'Houve um erro ao instalar o sistema! contate o desenvolvedor!', 'erro');
                 redirect('install');
             }
         endif;
